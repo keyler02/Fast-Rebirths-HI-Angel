@@ -41,6 +41,7 @@ AutoFarm:AddToggle("OMEGA FARM LEGENDS", false, function(value)
 end)
 
 AutoFarm:AddSwitch("MEGA FAST REBIRTH 1SEG"
+
 getgenv().FastRebirth = false
 
 local function startFastRebirth()
