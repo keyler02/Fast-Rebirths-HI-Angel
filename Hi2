@@ -1,5 +1,5 @@
 -- Cargar libreria OMEGADEZZ
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/keyler02/Librer-a-Angel-s-and-keyzorxx-hub/refs/heads/main/Library"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/OMEGADEZZ/libreria-hz/refs/heads/main/libreria", true))()
 -- Crear ventana principal
 local window = library:AddWindow("Fast rebirh Hi Angel / By Keyzorxx", {
     main_color = Color3.fromRGB(255, 119, 0),
