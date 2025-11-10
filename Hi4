@@ -1,13 +1,14 @@
--- Cargar libreria OMEGADEZZ
+-- Cargar librerÃ­a OMEGADEZZ
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/OMEGADEZZ/libreria-hz/refs/heads/main/libreria", true))()
+
 -- Crear ventana principal
-local window = library:AddWindow("Fast rebirh Hi Angel / By Keyzorxx", {
+local window = library:AddWindow("OMEGADEZZ LEGENDS SCRIPT / By HonnyDezz", {
     main_color = Color3.fromRGB(255, 119, 0),
     min_size = Vector2.new(710, 780),
     can_resize = true,
 })
 
--- Crear pestaña de farmeo
+-- Crear pestaÃ±a de farmeo
 local AutoFarm = window:AddTab("FARM OP")
 
 -- Variables base
@@ -18,7 +19,7 @@ local durability = player:WaitForChild("Durability")
 local strength = leaderstats:WaitForChild("Strength")
 
 ---------------------------------------------------------
--- Add  BOTON: OMEGA FARM LEGENDS
+-- ðŸŸ  BOTÃ“N: OMEGA FARM LEGENDS
 ---------------------------------------------------------
 local ganhoDurability = 4008496294
 local valoresStrength = {4059927922, 4630927295, 4429207835}
