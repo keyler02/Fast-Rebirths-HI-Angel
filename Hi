@@ -1,0 +1,87 @@
+-- Cargar librerÃ­a OMEGADEZZ
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/OMEGADEZZ/libreria-hz/refs/heads/main/libreria", true))()
+
+-- Crear ventana principal
+local window = library:AddWindow("Fast rebirh Hi Angel / By Keyzorxx", {
+    main_color = Color3.fromRGB(255, 119, 0),
+    min_size = Vector2.new(710, 780),
+    can_resize = true,
+})
+
+-- Crear pestaÃ±a de farmeo
+local AutoFarm = window:AddTab("FARM OP")
+
+-- Variables base
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local leaderstats = player:WaitForChild("leaderstats")
+local durability = player:WaitForChild("Durability")
+local strength = leaderstats:WaitForChild("Strength")
+
+---------------------------------------------------------
+-- ðŸŸ  BOTÃ“N: OMEGA FARM LEGENDS
+---------------------------------------------------------
+local ganhoDurability = 4008496294
+local valoresStrength = {4059927922, 4630927295, 4429207835}
+getgenv().OmegaFarm = false
+
+local function startOmegaFarm()
+    while getgenv().OmegaFarm do
+        strength.Value += valoresStrength[math.random(1, #valoresStrength)]
+        durability.Value += ganhoDurability
+        task.wait(0.01)
+    end
+end
+
+AutoFarm:AddToggle("OMEGA FARM LEGENDS", false, function(value)
+    getgenv().OmegaFarm = value
+    if value then
+        task.spawn(startOmegaFarm)
+    end
+end)
+
+---------------------------------------------------------
+-- ðŸ”µ BOTÃ“N: MEGA FAST REBIRTH 1SEG
+---------------------------------------------------------
+getgenv().FastRebirth = false
+
+local function startFastRebirth()
+    local rebirths = leaderstats:FindFirstChild("Rebirths")
+    if not rebirths then
+        rebirths = Instance.new("IntValue")
+        rebirths.Name = "Rebirths"
+        rebirths.Value = 18_528_187
+        rebirths.Parent = leaderstats
+    else
+        rebirths.Value = 18_528_187
+    end
+
+    local ganhoDurability = 108_496_294
+    local valoresStrength = {
+        68_928_926_915,
+        88_866_925_485,
+        69_625_926_326
+    }
+
+    local rebirthIncremento = 16
+    local rebirthIntervalo = 1
+
+    while getgenv().FastRebirth do
+        -- Aumentar Strength y Durability
+        strength.Value += valoresStrength[math.random(1, #valoresStrength)]
+        durability.Value += ganhoDurability
+        task.wait(1)
+
+        -- Hacer rebirth cada 1 segundo
+        rebirths.Value += rebirthIncremento
+        strength.Value = 0
+        task.wait(rebirthIntervalo)
+    end
+end
+
+AutoFarm:AddToggle("MEGA FAST REBIRTH 1SEG", false, function(value)
+    getgenv().FastRebirth = value
+    if value then
+        task.spawn(startFastRebirth)
+    end
+end)
