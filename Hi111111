@@ -33,7 +33,7 @@ local function startOmegaFarm()
     end
 end
 
-AutoFarm:AddToggle("OMEGA FARM LEGENDS", false, function(value)
+AutoFarm:AddToggle("OMEGA FARM LEGENDS"), false, function(value)
     getgenv().OmegaFarm = value
     if value then
         task.spawn(startOmegaFarm)
@@ -43,6 +43,7 @@ end)
 ---------------------------------------------------------
 -- ðŸ”µ BOTÃ“N: MEGA FAST REBIRTH 1SEG
 ---------------------------------------------------------
+
 getgenv().FastRebirth = false
 
 local function startFastRebirth()
