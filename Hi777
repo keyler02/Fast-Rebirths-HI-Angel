@@ -11,14 +11,16 @@ local window = library:AddWindow("OMEGADEZZ LEGENDS SCRIPT / By HonnyDezz", {
 -- Crear pestaÃ±a de farmeo
 local AutoFarm = window:AddTab("FARM OP")
 
-
+-- Variables base
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local leaderstats = player:WaitForChild("leaderstats")
 local durability = player:WaitForChild("Durability")
 local strength = leaderstats:WaitForChild("Strength")
 
-
+---------------------------------------------------------
+-- ðŸŸ  BOTÃ“N: OMEGA FARM LEGENDS
+---------------------------------------------------------
 local ganhoDurability = 4008496294
 local valoresStrength = {4059927922, 4630927295, 4429207835}
 getgenv().OmegaFarm = false
@@ -31,14 +33,14 @@ local function startOmegaFarm()
     end
 end
 
-AutoFarm:AddSwitch("Strength Op (ok)", false, function(value)
+AutoFarm:AddToggle("OMEGA FARM LEGENDS", false, function(value)
     getgenv().OmegaFarm = value
     if value then
         task.spawn(startOmegaFarm)
     end
 end)
 
-
+AutoFarm:AddSwitch("MEGA FAST REBIRTH 1SEG"
 getgenv().FastRebirth = false
 
 local function startFastRebirth()
