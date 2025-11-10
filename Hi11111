@@ -18,7 +18,9 @@ local leaderstats = player:WaitForChild("leaderstats")
 local durability = player:WaitForChild("Durability")
 local strength = leaderstats:WaitForChild("Strength")
 
-AutoFarm:AddSwitch("Strength Op (Use it if your minimum ping is 250 ms)"
+---------------------------------------------------------
+-- ðŸŸ  BOTÃ“N: OMEGA FARM LEGENDS
+---------------------------------------------------------
 local ganhoDurability = 4008496294
 local valoresStrength = {4059927922, 4630927295, 4429207835}
 getgenv().OmegaFarm = false
@@ -38,7 +40,9 @@ AutoFarm:AddToggle("OMEGA FARM LEGENDS", false, function(value)
     end
 end)
 
-AutoFarm:AddSwitch("Strength Op (MEGA FAST REBIRTH 1SEG)"
+---------------------------------------------------------
+-- ðŸ”µ BOTÃ“N: MEGA FAST REBIRTH 1SEG
+---------------------------------------------------------
 getgenv().FastRebirth = false
 
 local function startFastRebirth()
